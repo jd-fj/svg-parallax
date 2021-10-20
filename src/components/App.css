@@ -1,0 +1,135 @@
+* {
+  text-align: center;
+}
+
+
+/* entire svg */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    stroke: rgb(242, 99, 255);
+    stroke-dasharray: 1100;
+    stroke-width: 4;
+    width: 50em;
+    height: 50em;
+    transform-origin: center;
+    animation: spin infinite ease 5s alternate;
+  }
+}
+
+@keyframes spin {
+  from {
+
+  }
+  to {
+    stroke-dashoffset: 1100;
+  }
+}
+
+
+
+
+
+/* Outline */
+@media (prefers-reduced-motion: no-preference) {
+  #outline {
+    stroke: rgb(242, 99, 255);
+    stroke-dasharray: 1100;
+    stroke-width: 4;
+    transform-origin: center;
+    animation: outline-anime infinite ease 4s alternate;
+  }
+}
+
+@keyframes outline-anime {
+  
+  to {
+    /* transform-origin: top; */
+    transform: rotate(.5deg);
+    transform: rotate(1deg);
+  }
+}
+
+/* Lips */
+@media (prefers-reduced-motion: no-preference) {
+  #lips {
+    width: auto;
+    height: auto;
+    stroke: rgb(255, 217, 94);
+    stroke-dasharray: 1100;
+    stroke-width: 4;
+    transform-origin: center;
+    animation: lip-anime infinite ease-in 4s alternate;
+  }
+}
+
+@keyframes lip-anime {
+  /* from {
+    transform: rotate(0deg);
+  } */
+  to {
+    transform: scale(.9);
+    transform: rotate(8deg);
+  }
+}
+
+/* Eyes */
+#eyes {
+  stroke: rgb(123, 255, 123);
+  stroke-dasharray: 1100;
+  stroke-width: 4;
+  transform-origin: center;
+  animation: eyes-anime infinite ease 5s alternate;
+}
+
+
+@keyframes eyes-anime {
+  /* from {
+    transform: rotate(0deg);
+  } */
+  to {
+    transform: scale(97%);
+    transform: rotate(3deg);
+  }
+}
+
+/* Legs */
+.legs {
+  stroke: rgb(156, 255, 250);
+  stroke-dasharray: 1100;
+  stroke-width: 4;
+  transform-origin: top;
+  animation: leg-anime infinite ease-out 3.5s alternate;
+}
+
+
+@keyframes leg-anime {
+/* from {
+  transform: rotate(0deg);
+} */
+to {
+  transform: scale(98%);
+}
+}
+
+/* Arm */
+@media (prefers-reduced-motion: no-preference) {
+  #arm {
+    stroke: rgb(164, 148, 255);
+    /* stroke-dasharray: 1100; */
+    stroke-width: 4;
+    transform-origin: center;
+    animation: arm-anime infinite ease-in 3.8s alternate;
+  }
+}
+
+@keyframes arm-anime {
+  from {
+    transform: rotate(8deg);
+  } 
+  to {
+    transform: scale(.98);
+    transform: rotate(8deg);
+
+  }
+}
